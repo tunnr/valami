@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1416387695 source:c:\munka\namost\kodol.cpp
+	"header.h"
+
+1416388016 c:\munka\namost\header.h
+	<iostream>
+	<conio2.h>
+	<cstdlib>
+	<vector>
+	<fstream>
+	<cmath>
+
+1416387727 source:c:\munka\namost\main.cpp
+	<iostream>
+	<conio2.h>
+	<cstdlib>
+	<vector>
+	<fstream>
+	"header.h"
+
