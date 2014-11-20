@@ -18,3 +18,17 @@
 	<fstream>
 	"header.h"
 
+1416515123 source:c:\users\krisztian\documents\github\valami\kodol.cpp
+	"header.h"
+
+1416501647 c:\users\krisztian\documents\github\valami\header.h
+	<iostream>
+	<conio2.h>
+	<cstdlib>
+	<vector>
+	<fstream>
+	<cmath>
+
+1416501668 source:c:\users\krisztian\documents\github\valami\main.cpp
+	"header.h"
+

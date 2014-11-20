@@ -11,10 +11,10 @@
 using namespace std;
 
 int bekerekegykarakter();
-void beolvas(vector<string> &menu);
 string hozzafuzianyilat(int i, string seged);
 void kiir(int merre, vector<string> menu);
 void lepkedamenuben(int ch, int &i,vector<string> &menu);
 int dekodol(string str);
+void kodbe(vector<string> &menu);
 
 #endif // HEADER_H_INCLUDED

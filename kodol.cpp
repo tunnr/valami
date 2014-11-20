@@ -23,3 +23,23 @@ int dekodol(string str)
     cout<<karkod<<endl;
     return karkod;
 }
+
+void kodbe(vector<string> &menu)
+{
+    ifstream fin("asd.txt");
+    string fajlsor;
+    string seged;
+    int karakterertek=0;
+    while(fin>>fajlsor)
+    {
+        string sor;
+        do{
+            seged=fajlsor.substr(0,9);
+            karakterertek=dekodol(seged);
+            fajlsor.erase(0,9);
+            sor+=(char)karakterertek;
+        }while(fajlsor!="");
+        menu.push_back(sor);
+    }
+    fin.close();
+}

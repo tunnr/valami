@@ -6,13 +6,14 @@ int main()
 {
     setlocale(LC_ALL,"hun");
     vector<string> menu;
-    beolvas(menu);
+    kodbe(menu);
     int ch;
     int i=0;
     menu[i]=hozzafuzianyilat(i,menu[i]);
     kiir(i,menu);
     do{
         ch=bekerekegykarakter();
+        gotoxy(i,menu[i].size());
         lepkedamenuben(ch,i,menu);
         if(ch==13 and i!=menu.size()-1)
         {
@@ -50,19 +51,6 @@ int bekerekegykarakter()
         ch=getch();
     }
     return ch;
-}
-
-void beolvas(vector<string> &menu)
-{
-    ifstream fajlolv("menu.txt");
-    string seged;
-    fajlolv >> seged;
-    while(fajlolv.good())
-    {
-        menu.push_back(seged);
-        fajlolv >> seged;
-    }
-    fajlolv.close();
 }
 
 string hozzafuzianyilat(int i, string seged)
